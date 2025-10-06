@@ -1,4 +1,4 @@
-package generators;
+/*package generators;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -15,4 +15,4 @@ public class ClientSetup {
             MenuScreens.register(GeneratorMod.LAVA_GENERATOR_MENU.get(), LavaGeneratorScreen::new);
         });
     }
-}
+}*/

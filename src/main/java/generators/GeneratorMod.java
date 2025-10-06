@@ -44,8 +44,12 @@ public class GeneratorMod {
         MENUS.register(modEventBus);
 
         // Registrera screens på klienten
-
+        modEventBus.addListener(this::clientSetup);
     }
-
+    private void clientSetup(final FMLClientSetupEvent event) {
+        event.enqueueWork(() -> {
+            MenuScreens.register(LAVA_GENERATOR_MENU.get(), LavaGeneratorScreen::new);
+        });
+    }
 
 }
