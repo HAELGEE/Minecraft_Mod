@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "generators:block/lava_generator_side_100_empty",
+    "down": "generators:block/lava_generator_bottom",
+    "up": "generators:block/lava_generator_top_empty",
+    "north": "generators:block/lava_generator_side_100_empty",
+    "east": "generators:block/lava_generator_side_100_empty",
+    "south": "generators:block/lava_generator_side_100_empty",
+    "west": "generators:block/lava_generator_side_100_empty"
+  }
+}

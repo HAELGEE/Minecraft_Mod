@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="generators"
+version="1.0.0"
+displayName="PowerGenerator Mod"
+authors="HAELGE, Christofer Hägg"
+description='''A mod which applies generators to produce electricity:
+- Lava generator
+- Wind turbine generator
+- Fuel generator
+- Solar generator'''
+
+[[dependencies.generators]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.generators]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"

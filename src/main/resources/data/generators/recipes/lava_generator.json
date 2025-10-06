@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IBI",
+    "FFF"
+  ],
+  "key": {
+    "I": {"item": "minecraft:iron_ingot"},
+    "B": {"item": "minecraft:blast_furnace"},
+    "F": {"item": "minecraft:furnace"}
+  },
+  "result": {
+    "item": "generators:lava_generator",
+    "count": 1
+  }
+}

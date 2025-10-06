@@ -1,0 +1,5 @@
+{
+  "block.generators.lava_generator": "Lava Generator",
+  "item.generators.lava_generator": "Lava Generator",
+  "itemGroup.generators": "Generators"
+}

@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "energy=0,has_lava=false": { "model": "generators:block/lava_generator_0_empty" },
+    "energy=0,has_lava=true": { "model": "generators:block/lava_generator_0_lava" },
+    "energy=1,has_lava=false": { "model": "generators:block/lava_generator_10_empty" },
+    "energy=1,has_lava=true": { "model": "generators:block/lava_generator_10_lava" },
+    "energy=2,has_lava=false": { "model": "generators:block/lava_generator_20_empty" },
+    "energy=2,has_lava=true": { "model": "generators:block/lava_generator_20_lava" },
+    "energy=3,has_lava=false": { "model": "generators:block/lava_generator_30_empty" },
+    "energy=3,has_lava=true": { "model": "generators:block/lava_generator_30_lava" },
+    "energy=4,has_lava=false": { "model": "generators:block/lava_generator_40_empty" },
+    "energy=4,has_lava=true": { "model": "generators:block/lava_generator_40_lava" },
+    "energy=5,has_lava=false": { "model": "generators:block/lava_generator_50_empty" },
+    "energy=5,has_lava=true": { "model": "generators:block/lava_generator_50_lava" },
+    "energy=6,has_lava=false": { "model": "generators:block/lava_generator_60_empty" },
+    "energy=6,has_lava=true": { "model": "generators:block/lava_generator_60_lava" },
+    "energy=7,has_lava=false": { "model": "generators:block/lava_generator_70_empty" },
+    "energy=7,has_lava=true": { "model": "generators:block/lava_generator_70_lava" },
+    "energy=8,has_lava=false": { "model": "generators:block/lava_generator_80_empty" },
+    "energy=8,has_lava=true": { "model": "generators:block/lava_generator_80_lava" },
+    "energy=9,has_lava=false": { "model": "generators:block/lava_generator_90_empty" },
+    "energy=9,has_lava=true": { "model": "generators:block/lava_generator_90_lava" },
+    "energy=10,has_lava=false": { "model": "generators:block/lava_generator_100_empty" },
+    "energy=10,has_lava=true": { "model": "generators:block/lava_generator_100_lava" }
+  }
+}

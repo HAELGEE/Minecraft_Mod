@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "generators:block/lava_generator"
+    }
+  }
+}
