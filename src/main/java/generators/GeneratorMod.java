@@ -24,37 +24,28 @@ public class GeneratorMod {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, MODID);
     public static final DeferredRegister<MenuType<?>> MENUS = DeferredRegister.create(ForgeRegistries.MENU_TYPES, MODID);
 
-    // Registrera lava generator block
     public static final RegistryObject<Block> LAVA_GENERATOR_BLOCK = BLOCKS.register("lava_generator",
             () -> new LavaGeneratorBlock(Block.Properties.of().strength(3.5f).requiresCorrectToolForDrops()));
 
-    // Registrera block item så man kan placera det
     public static final RegistryObject<Item> LAVA_GENERATOR_ITEM = ITEMS.register("lava_generator",
             () -> new BlockItem(LAVA_GENERATOR_BLOCK.get(), new Item.Properties()));
 
-    // Registrera block entity
     public static final RegistryObject<BlockEntityType<LavaGeneratorBlockEntity>> LAVA_GENERATOR_BE = BLOCK_ENTITIES.register("lava_generator",
             () -> BlockEntityType.Builder.of(LavaGeneratorBlockEntity::new, LAVA_GENERATOR_BLOCK.get()).build(null));
 
-    // Registrera menu
     public static final RegistryObject<MenuType<LavaGeneratorMenu>> LAVA_GENERATOR_MENU = MENUS.register("lava_generator",
             () -> IForgeMenuType.create(LavaGeneratorMenu::new));
 
     public GeneratorMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
         BLOCKS.register(modEventBus);
         ITEMS.register(modEventBus);
         BLOCK_ENTITIES.register(modEventBus);
         MENUS.register(modEventBus);
 
-        // Lägg till screen registrering
-        modEventBus.addListener(this::clientSetup);
+        // Registrera screens på klienten
+
     }
 
-    private void clientSetup(final FMLClientSetupEvent event) {
-        event.enqueueWork(() -> {
-            MenuScreens.register(LAVA_GENERATOR_MENU.get(), LavaGeneratorScreen::new);
-        });
-    }
+
 }
